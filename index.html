@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="https://img.icons8.com/color/48/telegram-app--v1.png" type="image/x-icon">
+    <title>Join Telegram</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@700;900&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background layers -->
+    <div class="bg-layer bg-mountains"></div>
+    <div class="bg-layer bg-torii"></div>
+    <div class="bg-layer bg-sakura-left"></div>
+    <div class="bg-layer bg-sakura-right"></div>
+    <div class="bg-overlay"></div>
+    <div class="bg-particles" id="particles"></div>
+    <div class="falling-petals" id="petals"></div>
+
+    <!-- Floating kanji decorations -->
+    <div class="kanji-decoration kanji-top-left">桜</div>
+    <div class="kanji-decoration kanji-top-right">夢</div>
+    <div class="kanji-decoration kanji-bottom-left">光</div>
+
+    <!-- Anime character -->
+    <div class="anime-character">
+        <img src="https://mgx-backend-cdn.metadl.com/generate/images/1262655/2026-05-21/pab4sbyaagsa/anime-chibi-character.png" alt="Anime Character" />
+    </div>
+
+    <div class="main-container">
+        <!-- Torii gate frame -->
+        <div class="torii-frame">
+            <div class="torii-top"></div>
+            <div class="torii-beam"></div>
+            <div class="torii-pillar torii-pillar-left"></div>
+            <div class="torii-pillar torii-pillar-right"></div>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+            <!-- Wave pattern top -->
+            <div class="wave-pattern wave-top">
+                <svg viewBox="0 0 400 20" preserveAspectRatio="none">
+                    <path d="M0,10 C20,0 40,0 60,10 C80,20 100,20 120,10 C140,0 160,0 180,10 C200,20 220,20 240,10 C260,0 280,0 300,10 C320,20 340,20 360,10 C380,0 400,0 400,10 L400,0 L0,0 Z" fill="rgba(196, 30, 58, 0.15)"/>
+                </svg>
+            </div>
+
+            <!-- Glowing ring behind logo -->
+            <div class="logo-wrapper">
+                <div class="glow-ring"></div>
+                <div class="logo-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="telegram-icon">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <h1 class="title">Join Our Telegram</h1>
+            <p class="subtitle">Join the channel and wait for the timer to complete</p>
+
+            <!-- Seigaiha divider -->
+            <div class="seigaiha-divider">
+                <svg viewBox="0 0 200 20" preserveAspectRatio="none">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="rgba(255,183,197,0.3)" stroke-width="0.5"/>
+                    <circle cx="60" cy="20" r="18" fill="none" stroke="rgba(255,183,197,0.3)" stroke-width="0.5"/>
+                    <circle cx="100" cy="20" r="18" fill="none" stroke="rgba(255,183,197,0.3)" stroke-width="0.5"/>
+                    <circle cx="140" cy="20" r="18" fill="none" stroke="rgba(255,183,197,0.3)" stroke-width="0.5"/>
+                    <circle cx="180" cy="20" r="18" fill="none" stroke="rgba(255,183,197,0.3)" stroke-width="0.5"/>
+                </svg>
+            </div>
+
+            <!-- Join Button -->
+            <a href="https://t.me/MohiniLive?text=hello" target="_blank" rel="noopener noreferrer" class="join-btn" id="joinBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                Join Telegram
+            </a>
+
+            <!-- Countdown Section -->
+            <div class="countdown-section">
+                <div class="countdown-label">Time Remaining</div>
+                <div class="countdown-timer" id="countdown">
+                    <div class="time-block">
+                        <span class="time-digit" id="minutes">00</span>
+                        <span class="time-unit">min</span>
+                    </div>
+                    <span class="time-separator">:</span>
+                    <div class="time-block">
+                        <span class="time-digit" id="seconds">30</span>
+                        <span class="time-unit">sec</span>
+                    </div>
+                </div>
+                <!-- Progress bar -->
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+
+            <!-- Wave pattern bottom -->
+            <div class="wave-pattern wave-bottom">
+                <svg viewBox="0 0 400 20" preserveAspectRatio="none">
+                    <path d="M0,10 C20,20 40,20 60,10 C80,0 100,0 120,10 C140,20 160,20 180,10 C200,0 220,0 240,10 C260,20 280,20 300,10 C320,0 340,0 360,10 C380,20 400,20 400,10 L400,20 L0,20 Z" fill="rgba(196, 30, 58, 0.15)"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <p class="footer-text">Stay connected. Stay updated.</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
