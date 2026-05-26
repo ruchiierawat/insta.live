@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Redirect to Telegram link after a brief delay
         setTimeout(function () {
-            window.location.href = 'https://t.me/MohiniLive?text=hello';
+            window.location.href = 'https://t.me/TalkMuskan?text=hello';
         }, 1500);
     }
 
